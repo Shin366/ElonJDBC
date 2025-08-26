@@ -55,7 +55,9 @@ public class MemberView {
 						printMessage("회원 정보 수정이 완료되었습니다.");
 					} else {
 						printMessage("회원 정보 수정이 완료되지 않았습니다.");
-					}					
+				}
+				} else {
+					this.printMessage("해당 정보가 존재하지 않습니다.");
 				}
 				break;
 			case 5 : 
@@ -159,7 +161,7 @@ public class MemberView {
 	// 메뉴 출력
 	private int printMenu() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("====== 회원 관리 프로그램 ======");
+		System.out.println("====== 회원 관리 프로그램(day02, stmt) ======");
 		System.out.println("1. 회원가입");
 		System.out.println("2. 회원 전체 조회");
 		System.out.println("3. 회원 검색(아이디)");
